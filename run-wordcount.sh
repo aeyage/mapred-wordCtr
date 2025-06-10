@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# WordCount MapReduce Runner Script
-
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <input_directory> <output_directory>"
     echo "Example: $0 input output"
@@ -11,7 +9,7 @@ fi
 INPUT_DIR=$1
 OUTPUT_DIR=$2
 
-# Remove output directory if it exists
+# remove output dir if it exists
 if [ -d "$OUTPUT_DIR" ]; then
     echo "Removing existing output directory: $OUTPUT_DIR"
     rm -rf "$OUTPUT_DIR"
@@ -21,7 +19,7 @@ echo "Running WordCount MapReduce job..."
 echo "Input: $INPUT_DIR"
 echo "Output: $OUTPUT_DIR"
 
-# Run the MapReduce job
+# run the mapred job
 java -cp target/mapred-wordctr-1.0-SNAPSHOT.jar WordCountDriver "$INPUT_DIR" "$OUTPUT_DIR"
 
 if [ $? -eq 0 ]; then
