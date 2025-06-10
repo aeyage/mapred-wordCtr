@@ -1,0 +1,71 @@
+# maven build directories
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# java compiled files
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# ide files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# os generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# hadoop/mapred output directories
+output/
+output*/
+*.out
+
+# log files
+*.log
+logs/
+
+# temporary files
+*.tmp
+*.temp
+temp/
+
+# package files
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# jvm crash dumps
+*.hprof
